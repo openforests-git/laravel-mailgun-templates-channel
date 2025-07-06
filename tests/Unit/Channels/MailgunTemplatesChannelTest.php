@@ -65,7 +65,7 @@ class MailgunTemplatesChannelTest extends TestCase
         self::assertSame($expected, $message->getRecipient());
     }
 
-    protected function notifiables(): iterable
+    public static function notifiables(): iterable
     {
         yield 'String notifiable' => [
             'notifiable' => 'foo@bar.com',
