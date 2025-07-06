@@ -27,10 +27,9 @@ use PHPUnit\Framework\MockObject\MethodCannotBeConfiguredException;
 use PHPUnit\Framework\MockObject\MethodNameAlreadyConfiguredException;
 use PHPUnit\Framework\MockObject\MethodNameNotConfiguredException;
 use PHPUnit\Framework\MockObject\MethodParametersAlreadyConfiguredException;
+use PHPUnit\Framework\Attributes\CoversClass;
 
-/**
- * @covers MailgunTemplatesChannel
- */
+#[CoversClass(MailgunTemplatesChannel::class)]
 class MailgunTemplatesChannelTest extends TestCase
 {
     /**
