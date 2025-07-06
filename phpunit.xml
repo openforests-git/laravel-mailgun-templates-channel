@@ -7,11 +7,16 @@
          failOnRisky="true"
          failOnWarning="true">
 
-    <coverage cacheDirectory=".phpunit.cache/code-coverage"
-              processUncoveredFiles="true">
+    <source>
         <include>
-            <directory suffix=".php">src/</directory>
+            <directory>./src</directory>
         </include>
+    </source>
+
+    <coverage includeUncoveredFiles="true">
+        <report>
+            <xml outputDirectory=".phpunit.cache/code-coverage/xml-coverage"/>
+        </report>
     </coverage>
 
     <testsuites>
