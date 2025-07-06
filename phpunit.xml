@@ -32,4 +32,8 @@
     <php>
         <env name="APP_KEY" value="base64:2fl+Ktvkfl+Fuz4Qp/A75G2RTiWVA/ZoKZvp6fiiM10="/>
     </php>
+
+    <logging>
+        <junit outputFile="./test-reports/phpunit.junit.xml"/>
+    </logging>
 </phpunit>
