@@ -27,7 +27,7 @@
     </testsuites>
 
     <extensions>
-        <extension class="Matchory\MailgunTemplatedMessages\Tests\Hooks\BypassFinalHook"/>
+        <bootstrap class="DG\BypassFinals\PHPUnitExtension"/>
     </extensions>
 
     <php>
