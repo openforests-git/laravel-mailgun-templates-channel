@@ -28,6 +28,9 @@ use PHPUnit\Framework\MockObject\MethodNameAlreadyConfiguredException;
 use PHPUnit\Framework\MockObject\MethodNameNotConfiguredException;
 use PHPUnit\Framework\MockObject\MethodParametersAlreadyConfiguredException;
 
+/**
+ * @covers MailgunTemplatesChannel
+ */
 class MailgunTemplatesChannelTest extends TestCase
 {
     /**
@@ -37,7 +40,6 @@ class MailgunTemplatesChannelTest extends TestCase
      * @param string $expected
      *
      * @dataProvider notifiables
-     * @covers       MailgunTemplatesChannel::send
      *
      * @throws Exception
      * @throws InvalidArgumentException
